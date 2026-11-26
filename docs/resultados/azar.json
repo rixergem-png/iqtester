@@ -1,0 +1,509 @@
+{
+ "solver": "azar",
+ "resultados": [
+  {
+   "id": "series-002",
+   "categoria": "series",
+   "dificultad": 1,
+   "elegida": 3,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "series-005",
+   "categoria": "series",
+   "dificultad": 3,
+   "elegida": 3,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "series-011",
+   "categoria": "series",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "series-014",
+   "categoria": "series",
+   "dificultad": 3,
+   "elegida": 2,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "series-022",
+   "categoria": "series",
+   "dificultad": 3,
+   "elegida": 3,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "series-025",
+   "categoria": "series",
+   "dificultad": 2,
+   "elegida": 3,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "series-026",
+   "categoria": "series",
+   "dificultad": 2,
+   "elegida": 2,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "letras-002",
+   "categoria": "letras",
+   "dificultad": 2,
+   "elegida": 3,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "letras-012",
+   "categoria": "letras",
+   "dificultad": 3,
+   "elegida": 2,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "letras-014",
+   "categoria": "letras",
+   "dificultad": 3,
+   "elegida": 1,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "letras-020",
+   "categoria": "letras",
+   "dificultad": 2,
+   "elegida": 1,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "letras-023",
+   "categoria": "letras",
+   "dificultad": 3,
+   "elegida": 2,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "letras-027",
+   "categoria": "letras",
+   "dificultad": 3,
+   "elegida": 1,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "letras-028",
+   "categoria": "letras",
+   "dificultad": 3,
+   "elegida": 0,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-001",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "elegida": 2,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-002",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "elegida": 1,
+   "correcta": 1,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-007",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "elegida": 2,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-009",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 1,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-013",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-014",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "elegida": 2,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-015",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "elegida": 3,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-016",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-017",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "elegida": 2,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-019",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "elegida": 3,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-027",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "elegida": 2,
+   "correcta": 1,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "matrices-028",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "elegida": 1,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-003",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "elegida": 3,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-006",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "elegida": 3,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-009",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "elegida": 2,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-012",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-017",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 1,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-018",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-019",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "elegida": 3,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-023",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-026",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "elegida": 3,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "analogias-028",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "elegida": 2,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-000",
+   "categoria": "logica",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 0,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-006",
+   "categoria": "logica",
+   "dificultad": 2,
+   "elegida": 2,
+   "correcta": 0,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-007",
+   "categoria": "logica",
+   "dificultad": 3,
+   "elegida": 1,
+   "correcta": 1,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-008",
+   "categoria": "logica",
+   "dificultad": 3,
+   "elegida": 2,
+   "correcta": 2,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-009",
+   "categoria": "logica",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 0,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-012",
+   "categoria": "logica",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 0,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-017",
+   "categoria": "logica",
+   "dificultad": 3,
+   "elegida": 2,
+   "correcta": 2,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-018",
+   "categoria": "logica",
+   "dificultad": 2,
+   "elegida": 0,
+   "correcta": 0,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "logica-026",
+   "categoria": "logica",
+   "dificultad": 3,
+   "elegida": 0,
+   "correcta": 2,
+   "confianza": 0.3333,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-002",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "elegida": 1,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-003",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "elegida": 3,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-006",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "elegida": 0,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-009",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "elegida": 0,
+   "correcta": 1,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-015",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "elegida": 2,
+   "correcta": 0,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-016",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "elegida": 3,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-017",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "elegida": 0,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-023",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "elegida": 2,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "espacial-029",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "elegida": 2,
+   "correcta": 1,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "verbal-002",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "elegida": 0,
+   "correcta": 2,
+   "confianza": 0.25,
+   "latencia": 0.0
+  },
+  {
+   "id": "verbal-011",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "elegida": 2,
+   "correcta": 3,
+   "confianza": 0.25,
+   "latencia": 0.0
+  }
+ ]
+}

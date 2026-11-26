@@ -1,0 +1,182 @@
+[
+ {
+  "id": "verbal-000",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "Perro es a ladrar como gato es a…",
+  "opciones": [
+   "maullar",
+   "rugir",
+   "cantar",
+   "aullar"
+  ],
+  "correcta": 0,
+  "explicacion": "Sonido característico de cada animal.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-001",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "Médico es a hospital como maestro es a…",
+  "opciones": [
+   "libro",
+   "escuela",
+   "alumno",
+   "pizarra"
+  ],
+  "correcta": 1,
+  "explicacion": "Lugar de trabajo.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-002",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "¿Qué palabra no pertenece al grupo? manzana, pera, zanahoria, uva",
+  "opciones": [
+   "manzana",
+   "pera",
+   "zanahoria",
+   "uva"
+  ],
+  "correcta": 2,
+  "explicacion": "La zanahoria es una hortaliza; las demás son frutas.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-003",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "Cabeza es a sombrero como pie es a…",
+  "opciones": [
+   "pierna",
+   "dedo",
+   "zapato",
+   "caminar"
+  ],
+  "correcta": 2,
+  "explicacion": "Prenda que se lleva en esa parte del cuerpo.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-004",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "Ojo es a ver como oído es a…",
+  "opciones": [
+   "oreja",
+   "oír",
+   "sonido",
+   "música"
+  ],
+  "correcta": 1,
+  "explicacion": "Función del órgano.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-005",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "¿Qué palabra no pertenece al grupo? rojo, azul, verde, triángulo",
+  "opciones": [
+   "rojo",
+   "azul",
+   "verde",
+   "triángulo"
+  ],
+  "correcta": 3,
+  "explicacion": "Triángulo es una forma; los demás, colores.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-006",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "Pez es a agua como pájaro es a…",
+  "opciones": [
+   "nido",
+   "aire",
+   "pluma",
+   "árbol"
+  ],
+  "correcta": 1,
+  "explicacion": "Medio en el que se desplaza.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-007",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "Lunes es a martes como enero es a…",
+  "opciones": [
+   "diciembre",
+   "mes",
+   "febrero",
+   "año"
+  ],
+  "correcta": 2,
+  "explicacion": "El siguiente de la secuencia.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-008",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "¿Qué palabra no pertenece al grupo? guitarra, violín, arpa, tambor",
+  "opciones": [
+   "guitarra",
+   "violín",
+   "arpa",
+   "tambor"
+  ],
+  "correcta": 3,
+  "explicacion": "El tambor es de percusión; los demás, de cuerda.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-009",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "Tijeras es a cortar como lápiz es a…",
+  "opciones": [
+   "papel",
+   "escribir",
+   "borrar",
+   "punta"
+  ],
+  "correcta": 1,
+  "explicacion": "Función del objeto.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-010",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "Caliente es a frío como alto es a…",
+  "opciones": [
+   "bajo",
+   "grande",
+   "largo",
+   "arriba"
+  ],
+  "correcta": 0,
+  "explicacion": "Antónimos.",
+  "split": "dev"
+ },
+ {
+  "id": "verbal-011",
+  "categoria": "verbal",
+  "dificultad": 1,
+  "enunciado": "¿Qué palabra no pertenece al grupo? cuadrado, círculo, triángulo, cubo",
+  "opciones": [
+   "cuadrado",
+   "círculo",
+   "triángulo",
+   "cubo"
+  ],
+  "correcta": 3,
+  "explicacion": "El cubo es tridimensional; los demás son figuras planas.",
+  "split": "dev"
+ }
+]

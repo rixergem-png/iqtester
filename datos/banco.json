@@ -1,0 +1,2856 @@
+{
+ "version": 1,
+ "semilla": 2026,
+ "preguntas": [
+  {
+   "id": "series-000",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 11, 19, 27, 35, 43, ?\n¿Qué número sigue?",
+   "opciones": [
+    "86",
+    "59",
+    "51",
+    "48"
+   ],
+   "correcta": 2,
+   "explicacion": "Serie aritmética: se suma 8.",
+   "split": "dev"
+  },
+  {
+   "id": "series-001",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 15, 6, -3, -12, -21, ?\n¿Qué número sigue?",
+   "opciones": [
+    "-30",
+    "-33",
+    "-28",
+    "-32"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie aritmética: se suma -9.",
+   "split": "dev"
+  },
+  {
+   "id": "series-002",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 18, 27, 36, 45, 54, ?\n¿Qué número sigue?",
+   "opciones": [
+    "60",
+    "64",
+    "61",
+    "63"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie aritmética: se suma 9.",
+   "split": "test"
+  },
+  {
+   "id": "series-003",
+   "categoria": "series",
+   "dificultad": 3,
+   "enunciado": "Serie: 18, 27, 22, 30, 26, 33, 30, ?\n¿Qué número sigue?",
+   "opciones": [
+    "38",
+    "36",
+    "34",
+    "35"
+   ],
+   "correcta": 1,
+   "explicacion": "Serie dos series intercaladas: posiciones impares +4, pares +3.",
+   "split": "dev"
+  },
+  {
+   "id": "series-004",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 1, 4, 16, 64, 256, ?\n¿Qué número sigue?",
+   "opciones": [
+    "1022",
+    "1021",
+    "512",
+    "1024"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie geométrica: se multiplica por 4.",
+   "split": "dev"
+  },
+  {
+   "id": "series-005",
+   "categoria": "series",
+   "dificultad": 3,
+   "enunciado": "Serie: 9, 45, 14, 50, 19, 55, 24, ?\n¿Qué número sigue?",
+   "opciones": [
+    "57",
+    "61",
+    "60",
+    "62"
+   ],
+   "correcta": 2,
+   "explicacion": "Serie dos series intercaladas: posiciones impares +5, pares +5.",
+   "split": "test"
+  },
+  {
+   "id": "series-006",
+   "categoria": "series",
+   "dificultad": 3,
+   "enunciado": "Serie: 15, 51, 20, 48, 25, 45, 30, ?\n¿Qué número sigue?",
+   "opciones": [
+    "42",
+    "60",
+    "45",
+    "41"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie dos series intercaladas: posiciones impares +5, pares -3.",
+   "split": "dev"
+  },
+  {
+   "id": "series-007",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 9, 5, 14, 19, 33, 52, ?\n¿Qué número sigue?",
+   "opciones": [
+    "84",
+    "85",
+    "88",
+    "82"
+   ],
+   "correcta": 1,
+   "explicacion": "Serie cada término es la suma de los dos anteriores.",
+   "split": "dev"
+  },
+  {
+   "id": "series-008",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 3, 8, 11, 19, 30, 49, ?\n¿Qué número sigue?",
+   "opciones": [
+    "79",
+    "98",
+    "78",
+    "77"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie cada término es la suma de los dos anteriores.",
+   "split": "dev"
+  },
+  {
+   "id": "series-009",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 3, 4, 8, 15, 25, ?\n¿Qué número sigue?",
+   "opciones": [
+    "38",
+    "40",
+    "37",
+    "48"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie las diferencias crecen de 3 en 3.",
+   "split": "dev"
+  },
+  {
+   "id": "series-010",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 2, 8, 32, 128, 512, ?\n¿Qué número sigue?",
+   "opciones": [
+    "1024",
+    "2045",
+    "2046",
+    "2048"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie geométrica: se multiplica por 4.",
+   "split": "dev"
+  },
+  {
+   "id": "series-011",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 6, 7, 9, 12, 16, ?\n¿Qué número sigue?",
+   "opciones": [
+    "32",
+    "18",
+    "23",
+    "21"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie las diferencias crecen de 1 en 1.",
+   "split": "test"
+  },
+  {
+   "id": "series-012",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 5, 20, 80, 320, 1280, ?\n¿Qué número sigue?",
+   "opciones": [
+    "5120",
+    "6080",
+    "5118",
+    "2560"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie geométrica: se multiplica por 4.",
+   "split": "dev"
+  },
+  {
+   "id": "series-013",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 4, 8, 12, 20, 32, 52, ?\n¿Qué número sigue?",
+   "opciones": [
+    "81",
+    "86",
+    "87",
+    "84"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie cada término es la suma de los dos anteriores.",
+   "split": "dev"
+  },
+  {
+   "id": "series-014",
+   "categoria": "series",
+   "dificultad": 3,
+   "enunciado": "Serie: 14, 44, 15, 41, 16, 38, 17, ?\n¿Qué número sigue?",
+   "opciones": [
+    "36",
+    "32",
+    "33",
+    "35"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie dos series intercaladas: posiciones impares +1, pares -3.",
+   "split": "test"
+  },
+  {
+   "id": "series-015",
+   "categoria": "series",
+   "dificultad": 3,
+   "enunciado": "Serie: 16, 27, 20, 31, 24, 35, 28, ?\n¿Qué número sigue?",
+   "opciones": [
+    "39",
+    "32",
+    "40",
+    "41"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie dos series intercaladas: posiciones impares +4, pares +4.",
+   "split": "dev"
+  },
+  {
+   "id": "series-016",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 12, 8, 4, 0, -4, ?\n¿Qué número sigue?",
+   "opciones": [
+    "-5",
+    "-10",
+    "-8",
+    "-11"
+   ],
+   "correcta": 2,
+   "explicacion": "Serie aritmética: se suma -4.",
+   "split": "dev"
+  },
+  {
+   "id": "series-017",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 26, 25, 24, 23, 22, ?\n¿Qué número sigue?",
+   "opciones": [
+    "21",
+    "22",
+    "20",
+    "44"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie aritmética: se suma -1.",
+   "split": "dev"
+  },
+  {
+   "id": "series-018",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 6, 8, 13, 21, 32, ?\n¿Qué número sigue?",
+   "opciones": [
+    "43",
+    "46",
+    "64",
+    "48"
+   ],
+   "correcta": 1,
+   "explicacion": "Serie las diferencias crecen de 3 en 3.",
+   "split": "dev"
+  },
+  {
+   "id": "series-019",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 4, 13, 22, 31, 40, ?\n¿Qué número sigue?",
+   "opciones": [
+    "58",
+    "48",
+    "46",
+    "49"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie aritmética: se suma 9.",
+   "split": "dev"
+  },
+  {
+   "id": "series-020",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 9, 12, 19, 30, 45, ?\n¿Qué número sigue?",
+   "opciones": [
+    "67",
+    "62",
+    "64",
+    "65"
+   ],
+   "correcta": 2,
+   "explicacion": "Serie las diferencias crecen de 4 en 4.",
+   "split": "dev"
+  },
+  {
+   "id": "series-021",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 7, 10, 14, 19, 25, ?\n¿Qué número sigue?",
+   "opciones": [
+    "31",
+    "50",
+    "32",
+    "35"
+   ],
+   "correcta": 2,
+   "explicacion": "Serie las diferencias crecen de 1 en 1.",
+   "split": "dev"
+  },
+  {
+   "id": "series-022",
+   "categoria": "series",
+   "dificultad": 3,
+   "enunciado": "Serie: 12, 39, 17, 34, 22, 29, 27, ?\n¿Qué número sigue?",
+   "opciones": [
+    "24",
+    "25",
+    "27",
+    "22"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie dos series intercaladas: posiciones impares +5, pares -5.",
+   "split": "test"
+  },
+  {
+   "id": "series-023",
+   "categoria": "series",
+   "dificultad": 3,
+   "enunciado": "Serie: 1, 54, 7, 59, 13, 64, 19, ?\n¿Qué número sigue?",
+   "opciones": [
+    "38",
+    "70",
+    "72",
+    "69"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie dos series intercaladas: posiciones impares +6, pares +5.",
+   "split": "dev"
+  },
+  {
+   "id": "series-024",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 3, 8, 14, 21, 29, ?\n¿Qué número sigue?",
+   "opciones": [
+    "58",
+    "38",
+    "40",
+    "39"
+   ],
+   "correcta": 1,
+   "explicacion": "Serie las diferencias crecen de 1 en 1.",
+   "split": "dev"
+  },
+  {
+   "id": "series-025",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 1, 4, 5, 9, 14, 23, ?\n¿Qué número sigue?",
+   "opciones": [
+    "37",
+    "35",
+    "34",
+    "38"
+   ],
+   "correcta": 0,
+   "explicacion": "Serie cada término es la suma de los dos anteriores.",
+   "split": "test"
+  },
+  {
+   "id": "series-026",
+   "categoria": "series",
+   "dificultad": 2,
+   "enunciado": "Serie: 6, 10, 18, 30, 46, ?\n¿Qué número sigue?",
+   "opciones": [
+    "69",
+    "68",
+    "66",
+    "92"
+   ],
+   "correcta": 2,
+   "explicacion": "Serie las diferencias crecen de 4 en 4.",
+   "split": "test"
+  },
+  {
+   "id": "series-027",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 21, 17, 13, 9, 5, ?\n¿Qué número sigue?",
+   "opciones": [
+    "-3",
+    "1",
+    "4",
+    "10"
+   ],
+   "correcta": 1,
+   "explicacion": "Serie aritmética: se suma -4.",
+   "split": "dev"
+  },
+  {
+   "id": "series-028",
+   "categoria": "series",
+   "dificultad": 3,
+   "enunciado": "Serie: 2, 44, 6, 48, 10, 52, 14, ?\n¿Qué número sigue?",
+   "opciones": [
+    "54",
+    "56",
+    "58",
+    "59"
+   ],
+   "correcta": 1,
+   "explicacion": "Serie dos series intercaladas: posiciones impares +4, pares +4.",
+   "split": "dev"
+  },
+  {
+   "id": "series-029",
+   "categoria": "series",
+   "dificultad": 1,
+   "enunciado": "Serie: 3, 9, 27, 81, 243, ?\n¿Qué número sigue?",
+   "opciones": [
+    "486",
+    "726",
+    "728",
+    "729"
+   ],
+   "correcta": 3,
+   "explicacion": "Serie geométrica: se multiplica por 3.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-000",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: B, R, D, S, F, T, H, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "V",
+    "T",
+    "U",
+    "K"
+   ],
+   "correcta": 2,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-001",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: A, B, D, G, K, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "P",
+    "J",
+    "N",
+    "K"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-002",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: D, E, G, J, N, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "S",
+    "D",
+    "M",
+    "N"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "test"
+  },
+  {
+   "id": "letras-003",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: A, B, D, G, K, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "O",
+    "P",
+    "H",
+    "K"
+   ],
+   "correcta": 1,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-004",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: E, F, H, K, O, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "V",
+    "T",
+    "X",
+    "K"
+   ],
+   "correcta": 1,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-005",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: B, C, E, H, L, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "P",
+    "L",
+    "W",
+    "Q"
+   ],
+   "correcta": 3,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-006",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: F, G, I, L, P, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "U",
+    "X",
+    "V",
+    "W"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-007",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: C, D, F, I, M, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "R",
+    "S",
+    "T",
+    "P"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-008",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: D, R, F, S, H, T, J, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "U",
+    "R",
+    "M",
+    "W"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-009",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: G, R, I, S, K, T, M, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "U",
+    "Q",
+    "W",
+    "V"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-010",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: B, M, D, N, F, O, H, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "I",
+    "E",
+    "H",
+    "P"
+   ],
+   "correcta": 3,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-011",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: A, B, D, G, K, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "N",
+    "K",
+    "P",
+    "R"
+   ],
+   "correcta": 2,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-012",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: C, Q, E, R, G, S, I, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "S",
+    "I",
+    "T",
+    "L"
+   ],
+   "correcta": 2,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "test"
+  },
+  {
+   "id": "letras-013",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: B, C, E, H, L, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "Q",
+    "G",
+    "V",
+    "O"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-014",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: E, R, G, S, I, T, K, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "V",
+    "W",
+    "U",
+    "S"
+   ],
+   "correcta": 2,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "test"
+  },
+  {
+   "id": "letras-015",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: F, G, I, L, P, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "U",
+    "W",
+    "V",
+    "L"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-016",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: D, N, F, O, H, P, J, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "J",
+    "P",
+    "Q",
+    "Z"
+   ],
+   "correcta": 2,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-017",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: G, R, I, S, K, T, M, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "U",
+    "S",
+    "W",
+    "G"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-018",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: E, Q, G, R, I, S, K, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "S",
+    "K",
+    "T",
+    "R"
+   ],
+   "correcta": 2,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-019",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: A, Q, C, R, E, S, G, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "T",
+    "V",
+    "G",
+    "H"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-020",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: F, G, I, L, P, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "V",
+    "R",
+    "E",
+    "U"
+   ],
+   "correcta": 3,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "test"
+  },
+  {
+   "id": "letras-021",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: A, S, C, T, E, U, G, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "V",
+    "G",
+    "N",
+    "T"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-022",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: A, P, C, Q, E, R, G, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "E",
+    "S",
+    "T",
+    "V"
+   ],
+   "correcta": 1,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-023",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: B, S, D, T, F, U, H, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "N",
+    "U",
+    "W",
+    "V"
+   ],
+   "correcta": 3,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "test"
+  },
+  {
+   "id": "letras-024",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: F, G, I, L, P, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "U",
+    "T",
+    "R",
+    "S"
+   ],
+   "correcta": 0,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-025",
+   "categoria": "letras",
+   "dificultad": 2,
+   "enunciado": "Serie: F, G, I, L, P, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "P",
+    "T",
+    "S",
+    "U"
+   ],
+   "correcta": 3,
+   "explicacion": "En el alfabeto, los saltos crecen: +1, +2, +3….",
+   "split": "dev"
+  },
+  {
+   "id": "letras-026",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: D, O, F, P, H, Q, J, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "T",
+    "R",
+    "J",
+    "S"
+   ],
+   "correcta": 1,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "letras-027",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: F, Q, H, R, J, S, L, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "U",
+    "R",
+    "W",
+    "T"
+   ],
+   "correcta": 3,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "test"
+  },
+  {
+   "id": "letras-028",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: G, S, I, T, K, U, M, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "M",
+    "U",
+    "V",
+    "T"
+   ],
+   "correcta": 2,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "test"
+  },
+  {
+   "id": "letras-029",
+   "categoria": "letras",
+   "dificultad": 3,
+   "enunciado": "Serie: A, P, C, Q, E, R, G, ?\n¿Qué letra sigue?",
+   "opciones": [
+    "O",
+    "U",
+    "S",
+    "G"
+   ],
+   "correcta": 2,
+   "explicacion": "En el alfabeto, dos series intercaladas.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-000",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   2    4   -2\n  14    3   11\n   7   18    ?",
+   "opciones": [
+    "-11",
+    "-14",
+    "-12",
+    "11"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: tercera = primera − segunda.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-001",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   9    4   36\n   8    4   32\n   7    7    ?",
+   "opciones": [
+    "51",
+    "46",
+    "14",
+    "49"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: tercera = primera × segunda.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-002",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  18    1  -16\n  17    7   -3\n  14    2    ?",
+   "opciones": [
+    "-8",
+    "-10",
+    "-12",
+    "-11"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla por filas: cada fila es una progresión aritmética.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-003",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   5    3    7\n   7    2    6\n   5    1    ?",
+   "opciones": [
+    "9",
+    "6",
+    "11",
+    "10"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: todas las filas suman 15.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-004",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   4    9   36\n   6    6   36\n   3    5    ?",
+   "opciones": [
+    "14",
+    "8",
+    "16",
+    "15"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: tercera = primera × segunda.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-005",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  17    2   15\n  11    3    8\n   7    3    ?",
+   "opciones": [
+    "4",
+    "2",
+    "7",
+    "10"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: tercera = primera − segunda.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-006",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   3   18   33\n  13    8    3\n  19   13    ?",
+   "opciones": [
+    "6",
+    "8",
+    "32",
+    "7"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: cada fila es una progresión aritmética.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-007",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   9    6    3\n  19    7   12\n  18   11    ?",
+   "opciones": [
+    "7",
+    "4",
+    "10",
+    "29"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: tercera = primera − segunda.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-008",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   6   11   16\n   7   16   25\n  19    4    ?",
+   "opciones": [
+    "-9",
+    "-11",
+    "-12",
+    "-8"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla por filas: cada fila es una progresión aritmética.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-009",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   5    2   10\n   8    4   32\n   6    3    ?",
+   "opciones": [
+    "15",
+    "18",
+    "9",
+    "16"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla por filas: tercera = primera × segunda.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-010",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  18   16    2\n   5    3    2\n   6    1    ?",
+   "opciones": [
+    "8",
+    "7",
+    "5",
+    "6"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla por filas: tercera = primera − segunda.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-011",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  20    4  -12\n   5    8   11\n  12   15    ?",
+   "opciones": [
+    "19",
+    "17",
+    "20",
+    "18"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: cada fila es una progresión aritmética.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-012",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   9   11   13\n   7    4    1\n   9   13    ?",
+   "opciones": [
+    "18",
+    "15",
+    "14",
+    "17"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: cada fila es una progresión aritmética.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-013",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   5    3   10\n   7    3    8\n   8    7    ?",
+   "opciones": [
+    "0",
+    "1",
+    "4",
+    "3"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: todas las filas suman 18.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-014",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   6   14    8\n   6   13    9\n   7    9    ?",
+   "opciones": [
+    "9",
+    "14",
+    "11",
+    "12"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: todas las filas suman 28.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-015",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   9    7   16\n   7   16   23\n  14   16    ?",
+   "opciones": [
+    "29",
+    "31",
+    "23",
+    "30"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: tercera = primera + segunda.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-016",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  11    9    3\n  11    2   10\n   7    4    ?",
+   "opciones": [
+    "10",
+    "9",
+    "15",
+    "12"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: todas las filas suman 23.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-017",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  19   16    3\n  12   20   -8\n   7    4    ?",
+   "opciones": [
+    "3",
+    "4",
+    "-8",
+    "2"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: tercera = primera − segunda.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-018",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  15    3   -9\n  16   16   16\n   3   15    ?",
+   "opciones": [
+    "24",
+    "26",
+    "27",
+    "18"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla por filas: cada fila es una progresión aritmética.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-019",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   5   12   19\n   7    1   -5\n   6   20    ?",
+   "opciones": [
+    "32",
+    "33",
+    "26",
+    "34"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: cada fila es una progresión aritmética.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-020",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   6    7    7\n  10   10    0\n   5    4    ?",
+   "opciones": [
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla por filas: todas las filas suman 20.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-021",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   5    5   11\n   2   10    9\n   4    1    ?",
+   "opciones": [
+    "18",
+    "19",
+    "14",
+    "16"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: todas las filas suman 21.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-022",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  11    2   11\n   6    7   11\n  11    8    ?",
+   "opciones": [
+    "5",
+    "3",
+    "4",
+    "8"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: todas las filas suman 24.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-023",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   8    8   64\n   2    1    2\n   6    9    ?",
+   "opciones": [
+    "57",
+    "54",
+    "55",
+    "53"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla por filas: tercera = primera × segunda.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-024",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   3    3    0\n   9    6    3\n   3   12    ?",
+   "opciones": [
+    "-9",
+    "-12",
+    "-6",
+    "15"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: tercera = primera − segunda.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-025",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   4   19   23\n  14    2   16\n   6   15    ?",
+   "opciones": [
+    "21",
+    "16",
+    "24",
+    "22"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: tercera = primera + segunda.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-026",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   7    1    9\n   2    8    7\n   7    8    ?",
+   "opciones": [
+    "7",
+    "-1",
+    "4",
+    "2"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla por filas: todas las filas suman 17.",
+   "split": "dev"
+  },
+  {
+   "id": "matrices-027",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  12    6    6\n  11    1   10\n   5    7    ?",
+   "opciones": [
+    "-4",
+    "-2",
+    "0",
+    "12"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla por filas: tercera = primera − segunda.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-028",
+   "categoria": "matrices",
+   "dificultad": 1,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n  12    9    3\n   4   10   -6\n  19   18    ?",
+   "opciones": [
+    "1",
+    "-6",
+    "2",
+    "3"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla por filas: tercera = primera − segunda.",
+   "split": "test"
+  },
+  {
+   "id": "matrices-029",
+   "categoria": "matrices",
+   "dificultad": 2,
+   "enunciado": "Completa la matriz (todas las filas siguen la misma regla):\n   2    7   11\n   5   10    5\n   8    6    ?",
+   "opciones": [
+    "8",
+    "7",
+    "6",
+    "5"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla por filas: todas las filas suman 20.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-000",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n5 → 125, 4 → 64, 2 → 8, 3 → ?",
+   "opciones": [
+    "30",
+    "6",
+    "28",
+    "27"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = x³.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-001",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n6 → 34, 4 → 14, 3 → 7, 2 → ?",
+   "opciones": [
+    "2",
+    "0",
+    "3",
+    "4"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = x² -2.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-002",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n6 → 26, 5 → 22, 9 → 38, 8 → ?",
+   "opciones": [
+    "34",
+    "36",
+    "32",
+    "16"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = 4·x +2.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-003",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n4 → 64, 3 → 27, 2 → 8, 5 → ?",
+   "opciones": [
+    "125",
+    "128",
+    "127",
+    "130"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = x³.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-004",
+   "categoria": "analogias",
+   "dificultad": 1,
+   "enunciado": "Cada número se transforma con la misma regla:\n6 → 12, 2 → 4, 3 → 6, 5 → ?",
+   "opciones": [
+    "12",
+    "25",
+    "7",
+    "10"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = 2·x +0.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-005",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n4 → 16, 8 → 64, 3 → 9, 6 → ?",
+   "opciones": [
+    "39",
+    "12",
+    "42",
+    "36"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = x² +0.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-006",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n9 → 38, 4 → 18, 8 → 34, 3 → ?",
+   "opciones": [
+    "14",
+    "9",
+    "11",
+    "12"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = 4·x +2.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-007",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n8 → 64, 5 → 25, 9 → 81, 2 → ?",
+   "opciones": [
+    "2",
+    "5",
+    "6",
+    "4"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = x² +0.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-008",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n4 → 64, 2 → 8, 5 → 125, 3 → ?",
+   "opciones": [
+    "6",
+    "27",
+    "30",
+    "25"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla: y = x³.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-009",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n6 → 38, 5 → 27, 9 → 83, 2 → ?",
+   "opciones": [
+    "4",
+    "7",
+    "5",
+    "6"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = x² +2.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-010",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n2 → 8, 4 → 64, 3 → 27, 5 → ?",
+   "opciones": [
+    "25",
+    "126",
+    "125",
+    "10"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla: y = x³.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-011",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n2 → 1, 4 → 5, 5 → 7, 9 → ?",
+   "opciones": [
+    "15",
+    "18",
+    "12",
+    "13"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = 2·x -3.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-012",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n7 → 11, 2 → 1, 8 → 13, 9 → ?",
+   "opciones": [
+    "81",
+    "13",
+    "15",
+    "18"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla: y = 2·x -3.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-013",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n8 → 28, 3 → 13, 5 → 19, 2 → ?",
+   "opciones": [
+    "12",
+    "11",
+    "4",
+    "10"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = 3·x +4.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-014",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n9 → 26, 5 → 14, 2 → 5, 4 → ?",
+   "opciones": [
+    "8",
+    "14",
+    "11",
+    "13"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla: y = 3·x -1.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-015",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n2 → 8, 5 → 125, 4 → 64, 3 → ?",
+   "opciones": [
+    "27",
+    "30",
+    "28",
+    "25"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = x³.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-016",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n7 → 26, 2 → 11, 5 → 20, 9 → ?",
+   "opciones": [
+    "33",
+    "41",
+    "18",
+    "32"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = 3·x +5.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-017",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n6 → 37, 3 → 10, 7 → 50, 5 → ?",
+   "opciones": [
+    "10",
+    "26",
+    "27",
+    "23"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla: y = x² +1.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-018",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n4 → 11, 2 → 7, 7 → 17, 9 → ?",
+   "opciones": [
+    "21",
+    "20",
+    "22",
+    "18"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = 2·x +3.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-019",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n6 → 23, 2 → 11, 4 → 17, 8 → ?",
+   "opciones": [
+    "37",
+    "32",
+    "29",
+    "26"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla: y = 3·x +5.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-020",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n3 → 27, 5 → 125, 4 → 64, 2 → ?",
+   "opciones": [
+    "8",
+    "10",
+    "4",
+    "9"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = x³.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-021",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n2 → 3, 9 → 80, 3 → 8, 7 → ?",
+   "opciones": [
+    "50",
+    "47",
+    "49",
+    "48"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = x² -1.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-022",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n7 → 52, 2 → 7, 8 → 67, 3 → ?",
+   "opciones": [
+    "12",
+    "14",
+    "13",
+    "9"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = x² +3.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-023",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n3 → 8, 9 → 20, 4 → 10, 8 → ?",
+   "opciones": [
+    "18",
+    "16",
+    "19",
+    "17"
+   ],
+   "correcta": 0,
+   "explicacion": "Regla: y = 2·x +2.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-024",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n3 → 3, 5 → 7, 2 → 1, 7 → ?",
+   "opciones": [
+    "49",
+    "11",
+    "9",
+    "12"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla: y = 2·x -3.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-025",
+   "categoria": "analogias",
+   "dificultad": 2,
+   "enunciado": "Cada número se transforma con la misma regla:\n6 → 25, 9 → 37, 3 → 13, 8 → ?",
+   "opciones": [
+    "34",
+    "33",
+    "35",
+    "41"
+   ],
+   "correcta": 1,
+   "explicacion": "Regla: y = 4·x +1.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-026",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n3 → 27, 4 → 64, 2 → 8, 5 → ?",
+   "opciones": [
+    "124",
+    "123",
+    "127",
+    "125"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = x³.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-027",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n4 → 64, 3 → 27, 5 → 125, 2 → ?",
+   "opciones": [
+    "5",
+    "10",
+    "4",
+    "8"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = x³.",
+   "split": "dev"
+  },
+  {
+   "id": "analogias-028",
+   "categoria": "analogias",
+   "dificultad": 3,
+   "enunciado": "Cada número se transforma con la misma regla:\n4 → 64, 5 → 125, 3 → 27, 2 → ?",
+   "opciones": [
+    "7",
+    "9",
+    "4",
+    "8"
+   ],
+   "correcta": 3,
+   "explicacion": "Regla: y = x³.",
+   "split": "test"
+  },
+  {
+   "id": "analogias-029",
+   "categoria": "analogias",
+   "dificultad": 1,
+   "enunciado": "Cada número se transforma con la misma regla:\n8 → 24, 2 → 6, 4 → 12, 5 → ?",
+   "opciones": [
+    "14",
+    "13",
+    "15",
+    "18"
+   ],
+   "correcta": 2,
+   "explicacion": "Regla: y = 3·x +0.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-000",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Todos los valkos son quelos. Ningún quelo es flime.\nSi las premisas son ciertas y existe al menos un valko, un quelo y un flime, ¿se cumple que «Algunos valkos no son flimes»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-001",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos quelos son valkos. Todos los valkos son crisles.\nSi las premisas son ciertas y existe al menos un quelo, un valko y un crisle, ¿se cumple que «Ningún quelo es crisle»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-002",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos flimes son mupos. Ningún mupo es drupo.\nSi las premisas son ciertas y existe al menos un flime, un mupo y un drupo, ¿se cumple que «Ningún flime es drupo»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-003",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Todos los mupos son tarbes. Todos los tarbes son flimes.\nSi las premisas son ciertas y existe al menos un mupo, un tarbe y un flime, ¿se cumple que «Algunos mupos son flimes»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-004",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Todos los tarbes son mupos. Ningún mupo es crisle.\nSi las premisas son ciertas y existe al menos un tarbe, un mupo y un crisle, ¿se cumple que «Algunos tarbes son crisles»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-005",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos zorbos no son valkos. Algunos valkos no son drupos.\nSi las premisas son ciertas y existe al menos un zorbo, un valko y un drupo, ¿se cumple que «Algunos zorbos no son drupos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-006",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Algunos crisles son zorbos. Todos los zorbos son flimes.\nSi las premisas son ciertas y existe al menos un crisle, un zorbo y un flime, ¿se cumple que «Algunos crisles son flimes»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-007",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos crisles son quelos. Ningún quelo es drupo.\nSi las premisas son ciertas y existe al menos un crisle, un quelo y un drupo, ¿se cumple que «Todos los crisles son drupos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-008",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos drupos no son mupos. Algunos mupos no son quelos.\nSi las premisas son ciertas y existe al menos un drupo, un mupo y un quelo, ¿se cumple que «Todos los drupos son quelos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-009",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Algunos flimes son valkos. Todos los valkos son quelos.\nSi las premisas son ciertas y existe al menos un flime, un valko y un quelo, ¿se cumple que «Algunos flimes son quelos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-010",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Todos los mupos son valkos. Ningún valko es drupo.\nSi las premisas son ciertas y existe al menos un mupo, un valko y un drupo, ¿se cumple que «Todos los mupos son drupos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-011",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos quelos no son tarbes. Ningún tarbe es valko.\nSi las premisas son ciertas y existe al menos un quelo, un tarbe y un valko, ¿se cumple que «Ningún quelo es valko»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-012",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Todos los mupos son valkos. Todos los valkos son crisles.\nSi las premisas son ciertas y existe al menos un mupo, un valko y un crisle, ¿se cumple que «Todos los mupos son crisles»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-013",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos flimes son mupos. Ningún mupo es drupo.\nSi las premisas son ciertas y existe al menos un flime, un mupo y un drupo, ¿se cumple que «Todos los flimes son drupos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-014",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos flimes son drupos. Algunos drupos no son crisles.\nSi las premisas son ciertas y existe al menos un flime, un drupo y un crisle, ¿se cumple que «Algunos flimes no son crisles»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-015",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Todos los crisles son tarbes. Ningún tarbe es drupo.\nSi las premisas son ciertas y existe al menos un crisle, un tarbe y un drupo, ¿se cumple que «Algunos crisles no son drupos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-016",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Todos los mupos son quelos. Ningún quelo es flime.\nSi las premisas son ciertas y existe al menos un mupo, un quelo y un flime, ¿se cumple que «Algunos mupos son flimes»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-017",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Todos los tarbes son drupos. Algunos drupos no son zorbos.\nSi las premisas son ciertas y existe al menos un tarbe, un drupo y un zorbo, ¿se cumple que «Algunos tarbes son zorbos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-018",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Todos los quelos son crisles. Ningún crisle es flime.\nSi las premisas son ciertas y existe al menos un quelo, un crisle y un flime, ¿se cumple que «Ningún quelo es flime»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-019",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Todos los tarbes son drupos. Ningún drupo es crisle.\nSi las premisas son ciertas y existe al menos un tarbe, un drupo y un crisle, ¿se cumple que «Todos los tarbes son crisles»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-020",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos valkos no son tarbes. Algunos tarbes no son mupos.\nSi las premisas son ciertas y existe al menos un valko, un tarbe y un mupo, ¿se cumple que «Ningún valko es mupo»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-021",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Todos los valkos son quelos. Ningún quelo es drupo.\nSi las premisas son ciertas y existe al menos un valko, un quelo y un drupo, ¿se cumple que «Algunos valkos no son drupos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-022",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Todos los mupos son flimes. Ningún flime es zorbo.\nSi las premisas son ciertas y existe al menos un mupo, un flime y un zorbo, ¿se cumple que «Todos los mupos son zorbos»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-023",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos drupos no son tarbes. Algunos tarbes no son mupos.\nSi las premisas son ciertas y existe al menos un drupo, un tarbe y un mupo, ¿se cumple que «Ningún drupo es mupo»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-024",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Todos los flimes son zorbos. Todos los zorbos son crisles.\nSi las premisas son ciertas y existe al menos un flime, un zorbo y un crisle, ¿se cumple que «Algunos flimes son crisles»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-025",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Todos los valkos son zorbos. Todos los zorbos son quelos.\nSi las premisas son ciertas y existe al menos un valko, un zorbo y un quelo, ¿se cumple que «Ningún valko es quelo»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-026",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos crisles son tarbes. Algunos tarbes no son flimes.\nSi las premisas son ciertas y existe al menos un crisle, un tarbe y un flime, ¿se cumple que «Algunos crisles no son flimes»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "test"
+  },
+  {
+   "id": "logica-027",
+   "categoria": "logica",
+   "dificultad": 2,
+   "enunciado": "Premisas: Algunos zorbos son quelos. Todos los quelos son tarbes.\nSi las premisas son ciertas y existe al menos un zorbo, un quelo y un tarbe, ¿se cumple que «Algunos zorbos son tarbes»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 0,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-028",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Algunos drupos son quelos. Todos los quelos son tarbes.\nSi las premisas son ciertas y existe al menos un drupo, un quelo y un tarbe, ¿se cumple que «Ningún drupo es tarbe»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "logica-029",
+   "categoria": "logica",
+   "dificultad": 3,
+   "enunciado": "Premisas: Ningún valko es zorbo. Algunos zorbos no son flimes.\nSi las premisas son ciertas y existe al menos un valko, un zorbo y un flime, ¿se cumple que «Algunos valkos no son flimes»?",
+   "opciones": [
+    "Sí, siempre",
+    "No, nunca",
+    "No se puede saber"
+   ],
+   "correcta": 2,
+   "explicacion": "Comprobado en todos los mundos posibles que cumplen las premisas.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-000",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Este. Giras 90° a la derecha, después 270° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Oeste",
+    "Sur",
+    "Este",
+    "Norte"
+   ],
+   "correcta": 0,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-001",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Sur. Giras 90° a la izquierda, después 180° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Norte",
+    "Sur",
+    "Oeste",
+    "Este"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-002",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "enunciado": "Miras hacia el Norte. Giras 270° a la izquierda, después 270° a la derecha, después 270° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Norte",
+    "Oeste",
+    "Este"
+   ],
+   "correcta": 3,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "espacial-003",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "enunciado": "Miras hacia el Oeste. Giras 90° a la derecha, después 180° a la derecha, después 90° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Norte",
+    "Sur",
+    "Oeste",
+    "Este"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "espacial-004",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "enunciado": "Miras hacia el Sur. Giras 180° a la izquierda, después 270° a la izquierda, después 270° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Este",
+    "Norte",
+    "Oeste"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-005",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Sur. Giras 270° a la derecha, después 270° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Este",
+    "Sur",
+    "Oeste",
+    "Norte"
+   ],
+   "correcta": 1,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-006",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "enunciado": "Miras hacia el Norte. Giras 90° a la izquierda, después 90° a la derecha, después 180° a la izquierda, después 270° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Este",
+    "Norte",
+    "Oeste",
+    "Sur"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "espacial-007",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "enunciado": "Miras hacia el Sur. Giras 270° a la derecha, después 270° a la derecha, después 180° a la derecha, después 180° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Norte",
+    "Sur",
+    "Oeste",
+    "Este"
+   ],
+   "correcta": 0,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-008",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Sur. Giras 90° a la derecha, después 90° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Oeste",
+    "Sur",
+    "Este",
+    "Norte"
+   ],
+   "correcta": 1,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-009",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Norte. Giras 180° a la derecha, después 180° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Norte",
+    "Este",
+    "Oeste"
+   ],
+   "correcta": 1,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "espacial-010",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "enunciado": "Miras hacia el Sur. Giras 180° a la izquierda, después 90° a la izquierda, después 90° a la derecha, después 180° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Oeste",
+    "Norte",
+    "Sur",
+    "Este"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-011",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Norte. Giras 90° a la izquierda, después 180° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Norte",
+    "Este",
+    "Oeste",
+    "Sur"
+   ],
+   "correcta": 1,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-012",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "enunciado": "Miras hacia el Norte. Giras 270° a la derecha, después 180° a la derecha, después 90° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Oeste",
+    "Norte",
+    "Este",
+    "Sur"
+   ],
+   "correcta": 3,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-013",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Oeste. Giras 90° a la izquierda, después 270° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Oeste",
+    "Norte",
+    "Este"
+   ],
+   "correcta": 1,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-014",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Sur. Giras 270° a la derecha, después 270° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Este",
+    "Norte",
+    "Sur",
+    "Oeste"
+   ],
+   "correcta": 1,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-015",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "enunciado": "Miras hacia el Norte. Giras 270° a la derecha, después 180° a la izquierda, después 270° a la izquierda, después 90° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Oeste",
+    "Sur",
+    "Este",
+    "Norte"
+   ],
+   "correcta": 0,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "espacial-016",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Oeste. Giras 180° a la izquierda, después 90° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Este",
+    "Oeste",
+    "Sur",
+    "Norte"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "espacial-017",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "enunciado": "Miras hacia el Oeste. Giras 270° a la izquierda, después 270° a la izquierda, después 270° a la derecha, después 180° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Oeste",
+    "Este",
+    "Norte",
+    "Sur"
+   ],
+   "correcta": 3,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "espacial-018",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "enunciado": "Miras hacia el Norte. Giras 90° a la izquierda, después 180° a la derecha, después 270° a la izquierda, después 180° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Oeste",
+    "Norte",
+    "Este"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-019",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "enunciado": "Miras hacia el Norte. Giras 90° a la derecha, después 90° a la izquierda, después 180° a la izquierda, después 270° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Norte",
+    "Este",
+    "Oeste"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-020",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "enunciado": "Miras hacia el Norte. Giras 180° a la izquierda, después 90° a la izquierda, después 180° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Norte",
+    "Este",
+    "Oeste"
+   ],
+   "correcta": 3,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-021",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "enunciado": "Miras hacia el Norte. Giras 270° a la izquierda, después 180° a la derecha, después 90° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Oeste",
+    "Norte",
+    "Este"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-022",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Sur. Giras 90° a la derecha, después 270° a la derecha.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Este",
+    "Norte",
+    "Oeste"
+   ],
+   "correcta": 0,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-023",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Oeste. Giras 180° a la izquierda, después 180° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Este",
+    "Sur",
+    "Oeste",
+    "Norte"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "espacial-024",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Oeste. Giras 90° a la derecha, después 90° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Norte",
+    "Este",
+    "Oeste",
+    "Sur"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-025",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "enunciado": "Miras hacia el Oeste. Giras 180° a la derecha, después 180° a la derecha, después 180° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Norte",
+    "Sur",
+    "Este",
+    "Oeste"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-026",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Este. Giras 270° a la izquierda, después 270° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Sur",
+    "Norte",
+    "Este",
+    "Oeste"
+   ],
+   "correcta": 3,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-027",
+   "categoria": "espacial",
+   "dificultad": 1,
+   "enunciado": "Miras hacia el Este. Giras 180° a la izquierda, después 270° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Este",
+    "Oeste",
+    "Norte",
+    "Sur"
+   ],
+   "correcta": 2,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-028",
+   "categoria": "espacial",
+   "dificultad": 2,
+   "enunciado": "Miras hacia el Sur. Giras 180° a la derecha, después 270° a la derecha, después 180° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Norte",
+    "Oeste",
+    "Sur",
+    "Este"
+   ],
+   "correcta": 3,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "dev"
+  },
+  {
+   "id": "espacial-029",
+   "categoria": "espacial",
+   "dificultad": 3,
+   "enunciado": "Miras hacia el Este. Giras 270° a la izquierda, después 270° a la derecha, después 90° a la derecha, después 180° a la izquierda.\n¿Hacia dónde miras ahora?",
+   "opciones": [
+    "Oeste",
+    "Norte",
+    "Sur",
+    "Este"
+   ],
+   "correcta": 1,
+   "explicacion": "Cada 90° a la derecha avanza un punto cardinal en sentido horario.",
+   "split": "test"
+  },
+  {
+   "id": "verbal-000",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "Perro es a ladrar como gato es a…",
+   "opciones": [
+    "maullar",
+    "rugir",
+    "cantar",
+    "aullar"
+   ],
+   "correcta": 0,
+   "explicacion": "Sonido característico de cada animal.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-001",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "Médico es a hospital como maestro es a…",
+   "opciones": [
+    "libro",
+    "escuela",
+    "alumno",
+    "pizarra"
+   ],
+   "correcta": 1,
+   "explicacion": "Lugar de trabajo.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-002",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "¿Qué palabra no pertenece al grupo? manzana, pera, zanahoria, uva",
+   "opciones": [
+    "manzana",
+    "pera",
+    "zanahoria",
+    "uva"
+   ],
+   "correcta": 2,
+   "explicacion": "La zanahoria es una hortaliza; las demás son frutas.",
+   "split": "test"
+  },
+  {
+   "id": "verbal-003",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "Cabeza es a sombrero como pie es a…",
+   "opciones": [
+    "pierna",
+    "dedo",
+    "zapato",
+    "caminar"
+   ],
+   "correcta": 2,
+   "explicacion": "Prenda que se lleva en esa parte del cuerpo.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-004",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "Ojo es a ver como oído es a…",
+   "opciones": [
+    "oreja",
+    "oír",
+    "sonido",
+    "música"
+   ],
+   "correcta": 1,
+   "explicacion": "Función del órgano.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-005",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "¿Qué palabra no pertenece al grupo? rojo, azul, verde, triángulo",
+   "opciones": [
+    "rojo",
+    "azul",
+    "verde",
+    "triángulo"
+   ],
+   "correcta": 3,
+   "explicacion": "Triángulo es una forma; los demás, colores.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-006",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "Pez es a agua como pájaro es a…",
+   "opciones": [
+    "nido",
+    "aire",
+    "pluma",
+    "árbol"
+   ],
+   "correcta": 1,
+   "explicacion": "Medio en el que se desplaza.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-007",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "Lunes es a martes como enero es a…",
+   "opciones": [
+    "diciembre",
+    "mes",
+    "febrero",
+    "año"
+   ],
+   "correcta": 2,
+   "explicacion": "El siguiente de la secuencia.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-008",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "¿Qué palabra no pertenece al grupo? guitarra, violín, arpa, tambor",
+   "opciones": [
+    "guitarra",
+    "violín",
+    "arpa",
+    "tambor"
+   ],
+   "correcta": 3,
+   "explicacion": "El tambor es de percusión; los demás, de cuerda.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-009",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "Tijeras es a cortar como lápiz es a…",
+   "opciones": [
+    "papel",
+    "escribir",
+    "borrar",
+    "punta"
+   ],
+   "correcta": 1,
+   "explicacion": "Función del objeto.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-010",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "Caliente es a frío como alto es a…",
+   "opciones": [
+    "bajo",
+    "grande",
+    "largo",
+    "arriba"
+   ],
+   "correcta": 0,
+   "explicacion": "Antónimos.",
+   "split": "dev"
+  },
+  {
+   "id": "verbal-011",
+   "categoria": "verbal",
+   "dificultad": 1,
+   "enunciado": "¿Qué palabra no pertenece al grupo? cuadrado, círculo, triángulo, cubo",
+   "opciones": [
+    "cuadrado",
+    "círculo",
+    "triángulo",
+    "cubo"
+   ],
+   "correcta": 3,
+   "explicacion": "El cubo es tridimensional; los demás son figuras planas.",
+   "split": "test"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[dev,ia]"
+      - run: pytest -q --cov   # falla si la cobertura baja del 90 %
+      - name: Puertas de umbrales y de regresión (código 1 si fallan)
+        run: python -m iqtester evaluar --solver azar --solver reglas --split test --umbrales umbrales.json --baseline docs/baseline.json

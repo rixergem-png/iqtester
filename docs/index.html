@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iqtester · ¿Razonas mejor que una IA?</title>
+<meta name="description" content="10 preguntas tipo test de CI. Al final, tu resultado comparado con modelos de IA en las mismas preguntas.">
+<style>
+  :root {
+    --fondo: #f6f7f9; --tarjeta: #ffffff; --texto: #1c2430; --suave: #5b6675; --borde: #dde2e8;
+    --acento: #2f6fdf; --acento-suave: #e8effc; --bien: #1f9d61; --bien-suave: #e4f5ec; --mal: #d64545; --mal-suave: #fbe9e9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo: #12161c; --tarjeta: #1b2129; --texto: #e6eaef; --suave: #9aa5b1; --borde: #2c343e;
+      --acento: #6b9cff; --acento-suave: #1e2a40; --bien: #4cc38a; --bien-suave: #16302a; --mal: #ff7b7b; --mal-suave: #3a1e22; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fondo); color: var(--texto);
+         font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 16px 48px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  .sub { color: var(--suave); margin: 0 0 24px; }
+  .tarjeta { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 14px; padding: 22px; }
+  .meta { display: flex; justify-content: space-between; color: var(--suave); font-size: .85rem; margin-bottom: 10px; }
+  .barra { height: 6px; background: var(--borde); border-radius: 99px; overflow: hidden; margin-bottom: 18px; }
+  .barra > span { display: block; height: 100%; background: var(--acento); transition: width .3s; }
+  .enunciado { white-space: pre-wrap; font-size: 1.05rem; margin: 0 0 18px; }
+  .enunciado.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .opciones { display: grid; gap: 10px; }
+  button { font: inherit; cursor: pointer; border-radius: 10px; }
+  .opcion { text-align: left; padding: 12px 14px; background: var(--tarjeta); color: var(--texto); border: 1px solid var(--borde); }
+  .opcion:hover:not(:disabled) { border-color: var(--acento); background: var(--acento-suave); }
+  .opcion b { display: inline-block; width: 1.6em; color: var(--suave); }
+  .opcion.ok { border-color: var(--bien); background: var(--bien-suave); }
+  .opcion.ko { border-color: var(--mal); background: var(--mal-suave); }
+  .opcion:disabled { cursor: default; }
+  .explicacion { margin-top: 14px; color: var(--suave); font-size: .95rem; min-height: 1.5em; }
+  .principal { margin-top: 18px; width: 100%; padding: 12px; background: var(--acento); color: #fff; border: 0; font-weight: 600; }
+  .principal:disabled { opacity: .4; cursor: default; }
+  .grande { font-size: 2.6rem; font-weight: 700; margin: 4px 0; }
+  .comparacion { display: grid; gap: 10px; margin: 18px 0; }
+  .fila { display: grid; grid-template-columns: 9.5em 1fr 3.2em; gap: 10px; align-items: center; font-size: .92rem; }
+  .fila .nombre { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .pista { height: 12px; background: var(--borde); border-radius: 99px; overflow: hidden; }
+  .pista > span { display: block; height: 100%; border-radius: 99px; background: var(--suave); }
+  .fila.tu .pista > span { background: var(--acento); }
+  .fila.tu { font-weight: 700; }
+  .nota { color: var(--suave); font-size: .85rem; }
+  footer { margin-top: 24px; color: var(--suave); font-size: .85rem; text-align: center; }
+  a { color: var(--acento); }
+</style>
+</head>
+<body>
+<main>
+  <h1>¿Razonas mejor que una IA?</h1>
+  <p class="sub">10 preguntas tipo test de CI: series, matrices, lógica, orientación… Al final verás tu resultado junto al de modelos de IA <b>en las mismas preguntas</b>.</p>
+
+  <section class="tarjeta" id="app"><p>Cargando preguntas…</p></section>
+
+  <footer>
+    Proyecto <a href="https://github.com/rixergem-png/iqtester">iqtester</a> de Jared Meneses ·
+    <a href="https://www.linkedin.com/in/jared-meneses-91864444b/">LinkedIn</a><br>
+    Es una práctica, no una medida de CI: un test real está estandarizado con miles de personas.
+  </footer>
+</main>
+
+<script>
+const N = 10, LETRAS = "ABCDE";
+const NOMBRES = { azar: "Azar", reglas: "Motor de reglas" };
+const app = document.getElementById("app");
+let datos, preguntas, actual, aciertos, respuestas;
+
+const nombre = (s) => NOMBRES[s] || s.replace(/^ollama:/, "");
+const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function barajar(xs) {
+  const a = xs.slice();
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+
+function inicio() {
+  // Una pregunta de cada categoría primero (variedad), luego al azar.
+  const porCat = {};
+  for (const p of barajar(datos.preguntas)) (porCat[p.categoria] ||= []).push(p);
+  const elegidas = Object.values(porCat).map((g) => g.shift());
+  const resto = barajar(Object.values(porCat).flat());
+  preguntas = barajar(elegidas.concat(resto).slice(0, N));
+  actual = 0; aciertos = 0; respuestas = [];
+  pintar();
+}
+
+function pintar() {
+  const p = preguntas[actual];
+  const mono = p.categoria === "matrices" ? " mono" : "";
+  app.innerHTML = `
+    <div class="meta"><span>Pregunta ${actual + 1} de ${N}</span><span>${p.categoria}</span></div>
+    <div class="barra"><span style="width:${(actual / N) * 100}%"></span></div>
+    <p class="enunciado${mono}">${esc(p.enunciado)}</p>
+    <div class="opciones">${p.opciones.map((o, i) =>
+      `<button class="opcion" data-i="${i}"><b>${LETRAS[i]}</b>${esc(o)}</button>`).join("")}</div>
+    <p class="explicacion" aria-live="polite"></p>
+    <button class="principal" disabled>${actual + 1 < N ? "Siguiente" : "Ver resultado"}</button>`;
+  app.querySelectorAll(".opcion").forEach((b) => b.addEventListener("click", () => elegir(+b.dataset.i)));
+  app.querySelector(".principal").addEventListener("click", siguiente);
+}
+
+function elegir(i) {
+  const p = preguntas[actual], ok = i === p.correcta;
+  if (ok) aciertos++;
+  respuestas.push({ id: p.id, ok });
+  app.querySelectorAll(".opcion").forEach((b) => {
+    const j = +b.dataset.i;
+    b.disabled = true;
+    if (j === p.correcta) b.classList.add("ok"); else if (j === i) b.classList.add("ko");
+  });
+  app.querySelector(".explicacion").textContent = (ok ? "✓ Correcto. " : "✗ Incorrecto. ") + p.explicacion;
+  const boton = app.querySelector(".principal");
+  boton.disabled = false; boton.focus();
+}
+
+function siguiente() {
+  actual++;
+  actual < N ? pintar() : final();
+}
+
+function final() {
+  const ids = respuestas.map((r) => r.id);
+  const filas = [{ nombre: "Tú", valor: aciertos, tu: true }];
+  for (const [s, mapa] of Object.entries(datos.solvers))
+    filas.push({ nombre: nombre(s), valor: ids.filter((id) => mapa[id]).length });
+  filas.sort((a, b) => b.valor - a.valor);
+  const ia = filas.filter((f) => !f.tu && f.nombre !== "Azar" && f.nombre !== "Motor de reglas");
+  const superadas = ia.filter((f) => aciertos > f.valor).length;
+  const mensaje = ia.length
+    ? `Superaste a ${superadas} de ${ia.length} modelo${ia.length > 1 ? "s" : ""} de IA en estas preguntas.`
+    : "";
+  app.innerHTML = `
+    <div class="meta"><span>Resultado</span><span>${N} preguntas</span></div>
+    <p class="grande">${aciertos} / ${N}</p>
+    <p>${mensaje}</p>
+    <div class="comparacion">${filas.map((f) => `
+      <div class="fila${f.tu ? " tu" : ""}"><span class="nombre" title="${esc(f.nombre)}">${esc(f.nombre)}</span>
+        <span class="pista"><span style="width:${(f.valor / N) * 100}%"></span></span><span>${f.valor}/${N}</span></div>`).join("")}
+    </div>
+    <p class="nota">Las IA respondieron exactamente estas mismas preguntas en el benchmark del proyecto.
+      El motor de reglas es un programa que resuelve los tipos de pregunta que conoce y se abstiene en los demás.</p>
+    <button class="principal" id="otra">Hacer otro test</button>`;
+  document.getElementById("otra").addEventListener("click", inicio);
+}
+
+fetch("datos-web.json")
+  .then((r) => r.json())
+  .then((d) => { datos = d; inicio(); })
+  .catch(() => { app.innerHTML = "<p>No se pudieron cargar las preguntas.</p>"; });
+</script>
+</body>
+</html>
