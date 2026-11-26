@@ -29,7 +29,7 @@ def test_ollama_pide_json_con_esquema_y_temperatura_cero(monkeypatch):
     r = s.responder(LOGICA)
     assert r.indice == 1 and r.confianza == 0.7 and s.nombre == "ollama:modelo:1b"
     assert enviado["format"]["properties"]["letra"]["enum"] == ["A", "B", "C"]  # solo las letras válidas
-    assert enviado["options"] == {"temperature": 0, "seed": 0, "num_ctx": 2048} and enviado["stream"] is False
+    assert enviado["options"] == {"temperature": 0, "seed": 0, "num_ctx": 2048, "num_predict": 600} and enviado["stream"] is False
 
 
 @pytest.mark.parametrize("contenido", ['no es json', '{"letra": "D", "confianza": 0.9}', '{"confianza": 0.9}',
@@ -133,3 +133,28 @@ def test_cli_informe_desde_resultados_guardados(tmp_path):
     assert cli.main(["informe", str(res / "reglas.json"), "--salida", str(salida)]) == 0
     texto = salida.read_text()
     assert "### reglas" in texto and "| global | 56 | 96%" in texto and "| dificultad 3 |" in texto
+
+
+def test_ollama_razonar_pone_el_razonamiento_antes_de_la_letra(monkeypatch):
+    s = solvers.crear("ollama:qwen2.5:1.5b+razona")
+    assert s.razonar and s.modelo == "qwen2.5:1.5b" and s.nombre == "ollama:qwen2.5:1.5b+razona"
+    enviado = {}
+    monkeypatch.setattr(s, "_llamar", lambda c: enviado.update(c) or
+                        {"message": {"content": '{"razonamiento": "x", "letra": "C", "confianza": 0.4}'}})
+    assert s.responder(LOGICA).indice == 2
+    assert list(enviado["format"]["properties"]) == ["razonamiento", "letra", "confianza"]
+    assert enviado["format"]["required"] == ["razonamiento", "letra", "confianza"]
+    assert "paso a paso" in enviado["messages"][1]["content"]
+    assert not solvers.crear("ollama:qwen2.5:1.5b").razonar
+
+
+@pytest.mark.parametrize("error", [TimeoutError("lento"), ConnectionRefusedError(), ValueError("no es JSON")])
+def test_ollama_un_fallo_de_red_es_abstencion_y_no_tumba_la_evaluacion(monkeypatch, error):
+    s = solvers.SolverOllama("m")
+
+    def falla(cuerpo):
+        raise error
+
+    monkeypatch.setattr(s, "_llamar", falla)
+    r = s.responder(LOGICA)
+    assert r.indice is None and r.confianza == 0.0 and r.latencia >= 0

@@ -53,6 +53,35 @@ Modelos locales con [Ollama](https://ollama.com) en un portátil (i5-8250U, sin 
 4. **Cada modelo falla distinto.** `qwen2.5` acierta 6 de 7 series de letras y las 2 verbales, pero solo 1 de 12 matrices y 1 de 9 de lógica (peor que el azar, que da 33 % con tres opciones). `llama3.2` no acierta ninguna matriz ni ninguna serie de letras.
 5. **El motor de reglas, con un centenar de líneas de lógica, gana a los tres** en todo lo que sabe hacer, y se abstiene en lo que no (verbal) en vez de inventar.
 
+## Experimento 1 · Sesgo de posición: ¿razonan o eligen por la posición?
+
+Cada pregunta del test se hizo **4 veces con las opciones rotadas** (A→B→C→D). Quien razona sobre el contenido elige el mismo texto en las 4 (`python -m iqtester sesgo --solver ...`).
+
+| Solver | Consistencia (misma respuesta en las 4) | Acierta en las 4 | Exactitud media | Letras elegidas (de ~215) |
+|---|---:|---:|---:|---|
+| Motor de reglas | **96 %** | 96 % | 96 % | reparto según la respuesta correcta |
+| `llama3.2:1b` | 14 % | 9 % | 25 % | C 93 · B 72 · A 38 · D 12 |
+| `qwen2.5:1.5b` | 9 % | 4 % | 34 % | A 77 · C 67 · B 39 · D 32 |
+| `gemma3:1b` | **2 %** | 2 % | 29 % | **A 135** · B 48 · D 22 · C 10 |
+| Azar | 2 % | 0 % | 22 % | — |
+
+- **`gemma3:1b` es tan inconsistente como el azar**: cambia de respuesta al mover las opciones y elige la A el 63 % de las veces. Responde por posición, no por contenido.
+- El 41 % de `qwen2.5` en el orden original baja al **34 %** de media al rotar: parte de aquel 41 % fue suerte con el orden. Por eso conviene medir con rotaciones.
+
+## Experimento 2 · ¿Pensar ayuda?
+
+El mismo modelo, obligado a escribir su razonamiento **antes** de elegir (el esquema JSON pone `razonamiento` delante de `letra`; `--solver ollama:<modelo>+razona`).
+
+| Modelo | Sin razonar | Razonando | Prueba pareada (McNemar exacta) | Latencia p50 |
+|---|---:|---:|---|---:|
+| `qwen2.5:1.5b` | 41 % (23/56) | 27 % (15/56) | p = 0,13 · no demostrable | 2,9 s → 7,5 s |
+| `llama3.2:1b` | 21 % (12/56) | 27 % (15/56) | p = 0,66 · no demostrable | 3,2 s → 12,9 s |
+| `gemma3:1b` | 27 % (15/56) | 25 % (14/56) | p = 1,00 · no demostrable | 3,5 s → 16,1 s |
+
+- **Razonar no mejora a ningún modelo de forma demostrable**, y los hace entre 2,5 y 5 veces más lentos.
+- Entre el 18 % y el 23 % de las veces el modelo **no llega a responder** (se queda sin espacio razonando o rompe el JSON): cuenta como abstención.
+- `qwen2.5` baja de 41 % a 27 %: llamativo, pero con 56 preguntas no es significativo (15 preguntas solo las acierta sin razonar y 7 solo razonando).
+
 ### Cómo leerlos (con honestidad)
 
 - **El 96 % de las reglas es circular en las categorías generadas:** el generador usa esas mismas reglas para descartar preguntas ambiguas. Su papel no es presumir de acierto, sino ser **la referencia**: si un modelo falla una pregunta que las reglas resuelven, el fallo es del modelo y no de la pregunta.
@@ -113,7 +142,7 @@ El modelo de Claude se elige con `IQ_MODELO` (por defecto `claude-opus-5-5`) y e
 
 - Medir modelos de 7B+ y de API con el mismo banco y comparar.
 - Ampliar el split de test (más preguntas por categoría) para que los intervalos permitan comparar modelos entre sí.
-- Probar si pedir razonamiento paso a paso antes de responder mejora la exactitud y la calibración de los modelos pequeños.
+- Repetir los experimentos con más preguntas por categoría para que las diferencias pequeñas sean detectables.
 - Más preguntas verbales escritas a mano y revisadas por otra persona.
 
 ---

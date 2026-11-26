@@ -1,0 +1,949 @@
+{
+ "solver": "ollama:qwen2.5:1.5b",
+ "preguntas": 56,
+ "consistencia": 0.08928571428571429,
+ "exactitud_media": 0.3395348837209302,
+ "siempre_bien": 0.03571428571428571,
+ "posiciones": {
+  "A": 77,
+  "B": 39,
+  "C": 67,
+  "D": 32
+ },
+ "filas": [
+  {
+   "id": "series-002",
+   "categoria": "series",
+   "respuestas": [
+    "63",
+    "63",
+    "63",
+    "63"
+   ],
+   "aciertos": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "consistente": true
+  },
+  {
+   "id": "series-005",
+   "categoria": "series",
+   "respuestas": [
+    "61",
+    "61",
+    "60",
+    "61"
+   ],
+   "aciertos": [
+    false,
+    false,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "series-011",
+   "categoria": "series",
+   "respuestas": [
+    "32",
+    "32",
+    "21",
+    "23"
+   ],
+   "aciertos": [
+    false,
+    false,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "series-014",
+   "categoria": "series",
+   "respuestas": [
+    "33",
+    "36",
+    "32",
+    "33"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "series-022",
+   "categoria": "series",
+   "respuestas": [
+    "24",
+    "24",
+    "24",
+    "25"
+   ],
+   "aciertos": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "series-025",
+   "categoria": "series",
+   "respuestas": [
+    "37",
+    "38",
+    "38",
+    "35"
+   ],
+   "aciertos": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "series-026",
+   "categoria": "series",
+   "respuestas": [
+    "69",
+    "92",
+    "92",
+    "92"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "letras-002",
+   "categoria": "letras",
+   "respuestas": [
+    "N",
+    "M",
+    "M",
+    "S"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "letras-012",
+   "categoria": "letras",
+   "respuestas": [
+    "T",
+    "L",
+    "T",
+    "I"
+   ],
+   "aciertos": [
+    true,
+    false,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "letras-014",
+   "categoria": "letras",
+   "respuestas": [
+    "S",
+    "U",
+    "U",
+    "V"
+   ],
+   "aciertos": [
+    false,
+    true,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "letras-020",
+   "categoria": "letras",
+   "respuestas": [
+    "U",
+    "U",
+    "R",
+    "V"
+   ],
+   "aciertos": [
+    true,
+    true,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "letras-023",
+   "categoria": "letras",
+   "respuestas": [
+    "V",
+    "V",
+    "W",
+    "N"
+   ],
+   "aciertos": [
+    true,
+    true,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "letras-027",
+   "categoria": "letras",
+   "respuestas": [
+    "T",
+    "W",
+    "W",
+    "U"
+   ],
+   "aciertos": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "letras-028",
+   "categoria": "letras",
+   "respuestas": [
+    "V",
+    "V",
+    "V",
+    "M"
+   ],
+   "aciertos": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-001",
+   "categoria": "matrices",
+   "respuestas": [
+    "14",
+    "49",
+    "49",
+    "49"
+   ],
+   "aciertos": [
+    false,
+    true,
+    true,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-002",
+   "categoria": "matrices",
+   "respuestas": [
+    "-12",
+    "-11",
+    "-12",
+    "-10"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-007",
+   "categoria": "matrices",
+   "respuestas": [
+    "10",
+    "29",
+    "10",
+    "29"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-009",
+   "categoria": "matrices",
+   "respuestas": [
+    "16",
+    "16",
+    "16",
+    "16"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": true
+  },
+  {
+   "id": "matrices-013",
+   "categoria": "matrices",
+   "respuestas": [
+    "3",
+    "1",
+    "4",
+    "3"
+   ],
+   "aciertos": [
+    true,
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-014",
+   "categoria": "matrices",
+   "respuestas": [
+    "11",
+    "11",
+    "11",
+    "12"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-015",
+   "categoria": "matrices",
+   "respuestas": [
+    "29",
+    "30",
+    "29",
+    "31"
+   ],
+   "aciertos": [
+    false,
+    true,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-016",
+   "categoria": "matrices",
+   "respuestas": [
+    "15",
+    "9",
+    "9",
+    "10"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-017",
+   "categoria": "matrices",
+   "respuestas": [
+    "-8",
+    "4",
+    "-8",
+    "4"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-019",
+   "categoria": "matrices",
+   "respuestas": [
+    "32",
+    "34",
+    "26",
+    "33"
+   ],
+   "aciertos": [
+    false,
+    true,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-027",
+   "categoria": "matrices",
+   "respuestas": [
+    "-4",
+    "-2",
+    "-4",
+    "-2"
+   ],
+   "aciertos": [
+    false,
+    true,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "matrices-028",
+   "categoria": "matrices",
+   "respuestas": [
+    "-6",
+    "-6",
+    "-6",
+    "-6"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": true
+  },
+  {
+   "id": "analogias-003",
+   "categoria": "analogias",
+   "respuestas": [
+    "128",
+    "128",
+    "128",
+    "128"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": true
+  },
+  {
+   "id": "analogias-006",
+   "categoria": "analogias",
+   "respuestas": [
+    "14",
+    "12",
+    "11",
+    "9"
+   ],
+   "aciertos": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "analogias-009",
+   "categoria": "analogias",
+   "respuestas": [
+    "7",
+    "4",
+    "4",
+    "7"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "analogias-012",
+   "categoria": "analogias",
+   "respuestas": [
+    "15",
+    "13",
+    "13",
+    "13"
+   ],
+   "aciertos": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "analogias-017",
+   "categoria": "analogias",
+   "respuestas": [
+    "23",
+    "23",
+    "10",
+    "23"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "analogias-018",
+   "categoria": "analogias",
+   "respuestas": [
+    "21",
+    "20",
+    "21",
+    "18"
+   ],
+   "aciertos": [
+    true,
+    false,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "analogias-019",
+   "categoria": "analogias",
+   "respuestas": [
+    "37",
+    "32",
+    "29",
+    "37"
+   ],
+   "aciertos": [
+    false,
+    false,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "analogias-023",
+   "categoria": "analogias",
+   "respuestas": [
+    "18",
+    "17",
+    "19",
+    "19"
+   ],
+   "aciertos": [
+    true,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "analogias-026",
+   "categoria": "analogias",
+   "respuestas": [
+    "125",
+    "125",
+    "125",
+    "125"
+   ],
+   "aciertos": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "consistente": true
+  },
+  {
+   "id": "analogias-028",
+   "categoria": "analogias",
+   "respuestas": [
+    "8",
+    "8",
+    "8",
+    "9"
+   ],
+   "aciertos": [
+    true,
+    true,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-000",
+   "categoria": "logica",
+   "respuestas": [
+    "No, nunca",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-006",
+   "categoria": "logica",
+   "respuestas": [
+    "No, nunca",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-007",
+   "categoria": "logica",
+   "respuestas": [
+    "No, nunca",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    true,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-008",
+   "categoria": "logica",
+   "respuestas": [
+    "No, nunca",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-009",
+   "categoria": "logica",
+   "respuestas": [
+    "No se puede saber",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-012",
+   "categoria": "logica",
+   "respuestas": [
+    "No, nunca",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-017",
+   "categoria": "logica",
+   "respuestas": [
+    "No, nunca",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-018",
+   "categoria": "logica",
+   "respuestas": [
+    "No, nunca",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "logica-026",
+   "categoria": "logica",
+   "respuestas": [
+    "No, nunca",
+    "No, nunca",
+    "Sí, siempre"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-002",
+   "categoria": "espacial",
+   "respuestas": [
+    "Sur",
+    "Norte",
+    "Oeste",
+    "Oeste"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-003",
+   "categoria": "espacial",
+   "respuestas": [
+    "Oeste",
+    "Este",
+    "Este",
+    "Oeste"
+   ],
+   "aciertos": [
+    true,
+    false,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-006",
+   "categoria": "espacial",
+   "respuestas": [
+    "Oeste",
+    "Sur",
+    "Oeste",
+    "Oeste"
+   ],
+   "aciertos": [
+    true,
+    false,
+    true,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-009",
+   "categoria": "espacial",
+   "respuestas": [
+    "Norte",
+    "Norte",
+    "Este",
+    "Norte"
+   ],
+   "aciertos": [
+    true,
+    true,
+    false,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-015",
+   "categoria": "espacial",
+   "respuestas": [
+    "Norte",
+    "Oeste",
+    "Oeste",
+    "Sur"
+   ],
+   "aciertos": [
+    false,
+    true,
+    true,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-016",
+   "categoria": "espacial",
+   "respuestas": [
+    "Oeste",
+    "Oeste",
+    "Norte",
+    "Oeste"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-017",
+   "categoria": "espacial",
+   "respuestas": [
+    "Oeste",
+    "Oeste",
+    "Oeste",
+    "Este"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-023",
+   "categoria": "espacial",
+   "respuestas": [
+    "Oeste",
+    "Norte",
+    "Oeste",
+    "Oeste"
+   ],
+   "aciertos": [
+    true,
+    false,
+    true,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "espacial-029",
+   "categoria": "espacial",
+   "respuestas": [
+    "Oeste",
+    "Oeste",
+    "Oeste",
+    "Este"
+   ],
+   "aciertos": [
+    false,
+    false,
+    false,
+    false
+   ],
+   "consistente": false
+  },
+  {
+   "id": "verbal-002",
+   "categoria": "verbal",
+   "respuestas": [
+    "zanahoria",
+    "uva",
+    "zanahoria",
+    "zanahoria"
+   ],
+   "aciertos": [
+    true,
+    false,
+    true,
+    true
+   ],
+   "consistente": false
+  },
+  {
+   "id": "verbal-011",
+   "categoria": "verbal",
+   "respuestas": [
+    "cubo",
+    "cubo",
+    "triángulo",
+    "cubo"
+   ],
+   "aciertos": [
+    true,
+    true,
+    false,
+    true
+   ],
+   "consistente": false
+  }
+ ]
+}

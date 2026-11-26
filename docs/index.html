@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>iqtester · ¿Razonas mejor que una IA?</title>
 <meta name="description" content="10 preguntas tipo test de CI. Al final, tu resultado comparado con modelos de IA en las mismas preguntas.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¿Razonas mejor que una IA?">
+<meta property="og:description" content="10 preguntas tipo test de CI. Al final, tu resultado frente a modelos de IA en las mismas preguntas.">
+<meta property="og:url" content="https://rixergem-png.github.io/iqtester/">
+<meta property="og:image" content="https://rixergem-png.github.io/iqtester/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <style>
   :root {
     --fondo: #f6f7f9; --tarjeta: #ffffff; --texto: #1c2430; --suave: #5b6675; --borde: #dde2e8;
@@ -46,6 +54,8 @@
   .fila.tu .pista > span { background: var(--acento); }
   .fila.tu { font-weight: 700; }
   .nota { color: var(--suave); font-size: .85rem; }
+  .secundario { margin-top: 10px; width: 100%; padding: 12px; background: transparent; color: var(--acento);
+                border: 1px solid var(--acento); font-weight: 600; }
   footer { margin-top: 24px; color: var(--suave); font-size: .85rem; text-align: center; }
   a { color: var(--acento); }
 </style>
@@ -70,7 +80,7 @@ const NOMBRES = { azar: "Azar", reglas: "Motor de reglas" };
 const app = document.getElementById("app");
 let datos, preguntas, actual, aciertos, respuestas;
 
-const nombre = (s) => NOMBRES[s] || s.replace(/^ollama:/, "");
+const nombre = (s) => NOMBRES[s] || s.replace(/^ollama:/, "").replace(/\+razona$/, " (razonando)");
 const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 function barajar(xs) {
@@ -145,8 +155,19 @@ function final() {
     </div>
     <p class="nota">Las IA respondieron exactamente estas mismas preguntas en el benchmark del proyecto.
       El motor de reglas es un programa que resuelve los tipos de pregunta que conoce y se abstiene en los demás.</p>
-    <button class="principal" id="otra">Hacer otro test</button>`;
+    <button class="principal" id="compartir">Compartir mi resultado</button>
+    <button class="secundario" id="otra">Hacer otro test</button>`;
   document.getElementById("otra").addEventListener("click", inicio);
+  const texto = `Saqué ${aciertos}/${N} en un test de razonamiento` +
+    (ia.length ? ` y superé a ${superadas} de ${ia.length} modelos de IA.` : ".") + " ¿Puedes ganarles?";
+  document.getElementById("compartir").addEventListener("click", async (e) => {
+    const url = location.href.split("#")[0];
+    try {
+      if (navigator.share) { await navigator.share({ title: "¿Razonas mejor que una IA?", text: texto, url }); return; }
+      await navigator.clipboard.writeText(`${texto} ${url}`);
+      e.target.textContent = "¡Copiado! Pégalo donde quieras";
+    } catch (_) { /* el usuario canceló */ }
+  });
 }
 
 fetch("datos-web.json")

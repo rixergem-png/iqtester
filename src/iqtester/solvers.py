@@ -172,13 +172,16 @@ class SolverOllama:
     """Modelo local vía la API HTTP de Ollama (gratis, sin enviar datos fuera del equipo).
 
     Usa salida estructurada (`format` con esquema JSON), temperatura 0 y semilla fija.
+    Con razonar=True el esquema obliga a escribir el razonamiento ANTES de la letra
+    (el modelo genera los campos en orden), para medir si "pensar" mejora el resultado.
     """
 
     URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
+    SUFIJO_RAZONAR = "+razona"
 
-    def __init__(self, modelo: str, timeout: float = 300):
-        self.modelo, self.timeout = modelo, timeout
-        self.nombre = f"ollama:{modelo}"
+    def __init__(self, modelo: str, timeout: float = 300, razonar: bool = False):
+        self.modelo, self.timeout, self.razonar = modelo, timeout, razonar
+        self.nombre = f"ollama:{modelo}{self.SUFIJO_RAZONAR if razonar else ''}"
 
     def _llamar(self, cuerpo: dict) -> dict:
         import json
@@ -194,16 +197,23 @@ class SolverOllama:
 
         letras = list(LETRAS_OPCION[: len(p.opciones)])
         opciones = "\n".join(f"{letras[i]}) {o}" for i, o in enumerate(p.opciones))
-        esquema = {"type": "object", "required": ["letra", "confianza"],
-                   "properties": {"letra": {"type": "string", "enum": letras},
-                                  "confianza": {"type": "number", "minimum": 0, "maximum": 1}}}
+        propiedades = {"letra": {"type": "string", "enum": letras},
+                       "confianza": {"type": "number", "minimum": 0, "maximum": 1}}
+        pedido = "Responde en JSON con 'letra' y 'confianza'."
+        if self.razonar:
+            propiedades = {"razonamiento": {"type": "string"}, **propiedades}
+            pedido = ("Primero razona paso a paso en 'razonamiento' (máximo 5 frases); "
+                      "después da 'letra' y 'confianza' en JSON.")
+        esquema = {"type": "object", "required": list(propiedades), "properties": propiedades}
         cuerpo = {"model": self.modelo, "stream": False, "format": esquema,
-                  "options": {"temperature": 0, "seed": 0, "num_ctx": 2048},
+                  "options": {"temperature": 0, "seed": 0, "num_ctx": 2048, "num_predict": 600},
                   "messages": [{"role": "system", "content": INSTRUCCIONES},
-                               {"role": "user", "content": f"{p.enunciado}\n\nOpciones:\n{opciones}\n\n"
-                                                           "Responde en JSON con 'letra' y 'confianza'."}]}
+                               {"role": "user", "content": f"{p.enunciado}\n\nOpciones:\n{opciones}\n\n{pedido}"}]}
         inicio = time.perf_counter()
-        r = self._llamar(cuerpo)
+        try:
+            r = self._llamar(cuerpo)
+        except (OSError, ValueError):  # timeout, conexión rechazada o respuesta no JSON: no tumba la evaluación
+            return Respuesta(None, 0.0, time.perf_counter() - inicio)
         latencia = time.perf_counter() - inicio
         try:
             datos = json.loads(r["message"]["content"])
@@ -218,7 +228,9 @@ class SolverOllama:
 
 def crear(nombre: str) -> Solver:
     if nombre.startswith("ollama:"):
-        return SolverOllama(nombre.removeprefix("ollama:"))
+        modelo = nombre.removeprefix("ollama:")
+        razonar = modelo.endswith(SolverOllama.SUFIJO_RAZONAR)
+        return SolverOllama(modelo.removesuffix(SolverOllama.SUFIJO_RAZONAR), razonar=razonar)
     if nombre == "azar":
         return SolverAzar()
     if nombre == "reglas":

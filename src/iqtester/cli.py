@@ -74,6 +74,20 @@ def cmd_graficos(args) -> int:
     return 0
 
 
+def cmd_sesgo(args) -> int:
+    from .sesgo import medir
+
+    preguntas = cargar(args.banco, args.split)
+    args.guardar.mkdir(parents=True, exist_ok=True)
+    for nombre in args.solver:
+        res = medir(crear(nombre), preguntas, args.rotaciones)
+        destino = args.guardar / f"{nombre.replace(':', '_').replace('/', '_')}.json"
+        destino.write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"{nombre}: consistencia {res['consistencia']:.0%} · exactitud media {res['exactitud_media']:.0%}"
+              f" · siempre bien {res['siempre_bien']:.0%} · posiciones elegidas {res['posiciones']}")
+    return 0
+
+
 def cmd_informe(args) -> int:
     """Tablas Markdown a partir de resultados guardados (no hace falta volver a ejecutar los modelos)."""
     preguntas = {p.id: p for p in cargar(args.banco)}
@@ -156,6 +170,13 @@ def main(argv: list[str] | None = None) -> int:
     gr.add_argument("resultados", type=Path, nargs="+")
     gr.add_argument("--salida", type=Path, default=RAIZ / "docs")
 
+    sg = sub.add_parser("sesgo", help="prueba de sesgo de posición (opciones rotadas)")
+    sg.add_argument("--solver", action="append", required=True)
+    sg.add_argument("--split", choices=["dev", "test"], default="test")
+    sg.add_argument("--rotaciones", type=int, default=4)
+    sg.add_argument("--banco", type=Path, default=BANCO)
+    sg.add_argument("--guardar", type=Path, default=RAIZ / "docs/sesgo")
+
     inf = sub.add_parser("informe", help="tablas Markdown a partir de resultados guardados")
     inf.add_argument("resultados", type=Path, nargs="+")
     inf.add_argument("--salida", type=Path, default=RAIZ / "docs/resultados-test.md")
@@ -178,7 +199,7 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
     return {"generar": cmd_generar, "evaluar": cmd_evaluar, "jugar": cmd_jugar, "errores": cmd_errores,
             "graficos": cmd_graficos, "web": cmd_web,
-            "informe": cmd_informe}[args.comando](args)
+            "informe": cmd_informe, "sesgo": cmd_sesgo}[args.comando](args)
 
 
 if __name__ == "__main__":

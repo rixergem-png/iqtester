@@ -1,7 +1,10 @@
 {
  "azar": 0.30357142857142855,
+ "ollama:gemma3:1b+razona": 0.25,
  "ollama:gemma3:1b": 0.26785714285714285,
+ "ollama:llama3.2:1b+razona": 0.26785714285714285,
  "ollama:llama3.2:1b": 0.21428571428571427,
+ "ollama:qwen2.5:1.5b+razona": 0.26785714285714285,
  "ollama:qwen2.5:1.5b": 0.4107142857142857,
  "reglas": 0.9642857142857143
 }
